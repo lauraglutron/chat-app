@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import './Contact.css';
 
 class Contact extends React.Component {
-    constuctor(props) {
+    constructor(props) {
         super(props);
         this.state = {
             online: false,
