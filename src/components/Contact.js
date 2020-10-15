@@ -23,8 +23,8 @@ class Contact extends React.Component {
                             const newStatus = !this.state.online;
                             this.setState({ online: newStatus });
                         }}>
-                        <i className={this.state.statusOnline ? 'status-online' : 'status-offline'}></i>
-                        <p className="status-text">{this.state.statusOnline ? 'Online' : 'Offline'}</p>
+                        <i className={this.state.online ? 'status-online' : 'status-offline'}></i>
+                        <p className="status-text">{this.state.online ? 'Online' : 'Offline'}</p>
                     </div>
 
                 </div>
@@ -37,8 +37,7 @@ class Contact extends React.Component {
 Contact.propTypes = {
     name: PropTypes.string.isRequired,
     avatar: PropTypes.string.isRequired,
-    statusOnline: PropTypes.bool,
-    statusText: PropTypes.string.isRequired,
+    online: PropTypes.bool,
   };
 
 export default Contact;
